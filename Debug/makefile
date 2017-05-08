@@ -15,15 +15,17 @@ ORDERED_OBJS += \
 "./DSP2833x_ADC_cal.obj" \
 "./DSP2833x_Adc.obj" \
 "./DSP2833x_CodeStartBranch.obj" \
+"./DSP2833x_CpuTimers.obj" \
 "./DSP2833x_DefaultIsr.obj" \
+"./DSP2833x_EPwm.obj" \
 "./DSP2833x_GlobalVariableDefs.obj" \
 "./DSP2833x_PieCtrl.obj" \
 "./DSP2833x_PieVect.obj" \
 "./DSP2833x_SysCtrl.obj" \
 "./DSP2833x_usDelay.obj" \
 "./Example_2833xAdcSeqModeTest.obj" \
-"C:/ti/ccsv7/eclipse/device_support/f2833x/common/cmd/28335_RAM_lnk.cmd" \
-"C:/ti/ccsv7/eclipse/device_support/f2833x/headers/cmd/DSP2833x_Headers_nonBIOS.cmd" \
+"../28335_RAM_lnk.cmd" \
+"../DSP2833x_Headers_nonBIOS.cmd" \
 $(GEN_CMDS__FLAG) \
 -lIQmath_fpu32.lib \
 
@@ -164,8 +166,8 @@ Example_2833xAdcSeqModeTest.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "DSP2833x_ADC_cal.obj" "DSP2833x_Adc.obj" "DSP2833x_CodeStartBranch.obj" "DSP2833x_DefaultIsr.obj" "DSP2833x_GlobalVariableDefs.obj" "DSP2833x_PieCtrl.obj" "DSP2833x_PieVect.obj" "DSP2833x_SysCtrl.obj" "DSP2833x_usDelay.obj" "Example_2833xAdcSeqModeTest.obj" 
-	-$(RM) "DSP2833x_Adc.d" "DSP2833x_DefaultIsr.d" "DSP2833x_GlobalVariableDefs.d" "DSP2833x_PieCtrl.d" "DSP2833x_PieVect.d" "DSP2833x_SysCtrl.d" "Example_2833xAdcSeqModeTest.d" 
+	-$(RM) "DSP2833x_ADC_cal.obj" "DSP2833x_Adc.obj" "DSP2833x_CodeStartBranch.obj" "DSP2833x_CpuTimers.obj" "DSP2833x_DefaultIsr.obj" "DSP2833x_EPwm.obj" "DSP2833x_GlobalVariableDefs.obj" "DSP2833x_PieCtrl.obj" "DSP2833x_PieVect.obj" "DSP2833x_SysCtrl.obj" "DSP2833x_usDelay.obj" "Example_2833xAdcSeqModeTest.obj" 
+	-$(RM) "DSP2833x_Adc.d" "DSP2833x_CpuTimers.d" "DSP2833x_DefaultIsr.d" "DSP2833x_EPwm.d" "DSP2833x_GlobalVariableDefs.d" "DSP2833x_PieCtrl.d" "DSP2833x_PieVect.d" "DSP2833x_SysCtrl.d" "Example_2833xAdcSeqModeTest.d" 
 	-$(RM) "DSP2833x_ADC_cal.d" "DSP2833x_CodeStartBranch.d" "DSP2833x_usDelay.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
