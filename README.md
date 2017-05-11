@@ -47,6 +47,7 @@ ADC Reference Guide: http://www.ti.com/lit/ug/spru812a/spru812a.pdf
 Code Project examples can be sourced through CCSv7. The projects I used are:
 * Example_2833xAdcSeqModeTest
 * Example_2833xEPwmUpDownAQ
+
 The PWM project that I used, however, was already modified by a professor in my department. The modifications simply removed
 the second and third PWM control, and added some action to the ISR. This project directly from TI should work just the same.
 
